@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-// Recursive function to find Catalan number
-int catalan(int n) {
+// Recursive function to find  number of way to multiply mactrices
+int c(int n) {
     if (n <= 1)
         return 1;
 
@@ -9,7 +9,7 @@ int catalan(int n) {
 
     // Recurrence: Cn = sum(Ci * Cn-i-1)
     for (int i = 0; i < n; i++) {
-        ways += catalan(i) * catalan(n - i - 1);
+        ways += c(i) * c(n - i - 1);
     }
 
     return ways;
@@ -22,7 +22,7 @@ int main() {
 
     // Number of ways = Catalan(n-1)
     printf("Number of ways to multiply %d matrices = %d\n",
-           n, catalan(n - 1));
+           n, c(n - 1));
 
     return 0;
 }
