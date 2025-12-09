@@ -1,4 +1,5 @@
 #include<stdio.h>
+/*======== For ceil of house ==========*/
 int main(){
     int n=5,i,j,k=18,l;
      for(i=0;i<n;i++){
@@ -13,6 +14,7 @@ int main(){
           printf("\n");
         }
      };
+     /*======== for window of house ==========*/
      int height=15;
      int width=28;
      for(i=0;i<=3;i++){
@@ -26,6 +28,7 @@ int main(){
       }
       printf("\n");
      }
+     /*========== for door of house ========*/
       for(i=0;i<=3;i++){
       for(j=0;j<width;j++){
         if(j==0 || j==27){
@@ -40,6 +43,7 @@ int main(){
       }
       printf("\n");
      }
+    
      for(i=0;i<=7;i++){
       for(j=0;j<width;j++){
         if(j==0 || j==27){
